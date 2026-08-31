@@ -1,0 +1,23 @@
+# Ignore everything in the Obsidian configuration folder by default
+.obsidian/*
+
+# Allow tracking of core configurations, themes, and plugin lists
+!.obsidian/app.json
+!.obsidian/appearance.json
+!.obsidian/community-plugins.json
+!.obsidian/core-plugins.json
+!.obsidian/hotkeys.json
+
+# Allow tracking of plugin folders and manifests, but ignore heavy source code / compiled JS if desired
+!.obsidian/plugins/
+.obsidian/plugins/*/*
+!.obsidian/plugins/*/manifest.json
+
+# Ignore sensitive plugin data/keys (API keys, tokens, local settings)
+.obsidian/plugins/*/data.json
+
+# Ignore workspace and cache files
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.trash/
+.DS_Store
