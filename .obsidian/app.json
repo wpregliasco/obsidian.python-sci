@@ -2,5 +2,6 @@
   "defaultViewMode": "preview",
   "spellcheck": false,
   "settingsPopoutWindow": false,
-  "readableLineLength": false
+  "readableLineLength": false,
+  "alwaysUpdateLinks": true
 }
