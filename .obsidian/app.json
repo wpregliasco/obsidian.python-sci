@@ -2,6 +2,8 @@
   "defaultViewMode": "preview",
   "spellcheck": false,
   "settingsPopoutWindow": false,
-  "readableLineLength": false,
-  "alwaysUpdateLinks": true
+  "readableLineLength": true,
+  "alwaysUpdateLinks": true,
+  "focusNewTab": false,
+  "propertiesInDocument": "visible"
 }

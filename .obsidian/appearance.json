@@ -1,1 +1,8 @@
-{}
+{
+  "enabledCssSnippets": [
+    "edit-color",
+    "fix_callouts",
+    "key",
+    "presentation"
+  ]
+}
