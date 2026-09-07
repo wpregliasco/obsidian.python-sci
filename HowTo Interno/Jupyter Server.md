@@ -73,3 +73,10 @@ sudo /opt/tljh/user/bin/python -m pip install numpy scipy matplotlib
 ```
 # Trabajos prácticos
 
+Hay un directorio que sólo puede escribir el grupo docentes que está en   
+`/opt/tljh/shared/tps` y creé un link simbólico al directorio `TPs` en la raíz de cada docente. 
+
+Basta escribir ahí para que aparezca un TP. 
+
+
+---

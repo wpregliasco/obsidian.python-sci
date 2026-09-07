@@ -1,0 +1,26 @@
+[project]
+name = "python-sci"
+version = "0.1.0"
+description = "Environment for Obsidian"
+authors = [
+    { name = "Willy Pregliasco", email = "willy.pregliasco@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "arrow>=1.4.0",
+    "ipykernel>=7.3.0",
+    "jupyterlab>=4.6.3",
+    "jupytext>=1.19.5",
+    "matplotlib>=3.11.1",
+    "nbconvert>=7.17.1",
+    "numpy>=2.4.6",
+    "pip>=26.2.1",
+    "scipy>=1.17.1",
+]
+
+[project.scripts]
+python-sci = "python_sci:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
