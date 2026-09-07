@@ -14,6 +14,7 @@ jupyter:
     name: python3
 ---
 
+# Prueba de Jupyter en Obsidian
 
 ```python
 for i in range(10):
@@ -36,3 +37,9 @@ plt.show()
 Esto es la ecuación:
 $$ y = \frac{\sin x}{x}  \ \ \ \ \ x \in [0,6\pi]
 $$
+
+```python
+plt.plot(x,y**2,'r-')
+plt.grid()
+plt.show()
+```
