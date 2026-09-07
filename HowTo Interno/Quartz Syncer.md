@@ -1,7 +1,9 @@
 ---
 publish: "false"
 ---
-
+---
+test
+---
 - Vamos a usar el plugin __Quartz Syncer__
 - Para instalarlo, primero instalamos __BRAT__ Plugin 
 - Desde el plugin, le damos la dirección del __Quartz Syncer__:  `saberzero1/quartz-syncer`
