@@ -9,6 +9,8 @@ Esta es la página de la cátedra de `Python Científico`, materia optativa del 
 - Docentes: 
 	- Mariano Gómez Berisso
 	- Willy Pregliasco
+![[macana-hermanos-macana.gif]]
+
 - Clases
 	- 16 clases de 4 horas (4 créditos)
 	- Entre el 6 de octubre y el 26 de noviembre de 2026

@@ -1,0 +1,7 @@
+.key {
+  background-color: #ff6666;
+  color: #222;            /* dark gray, softer than pure black */
+  border-radius: 0.4em;
+  padding: 0.1em 0.4em;
+  font-weight: 600;    /* bold */
+}

@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/home/willy/Documents/python-sci/.venv/bin/python",
+    "-m",
+    "ipykernel_launcher",
+    "-f",
+    "{connection_file}"
+  ],
+  "display_name": "Python (.venv)",
+  "language": "python",
+  "metadata": {
+    "jupymd": {
+      "managed": true,
+      "interpreter": "/home/willy/Documents/python-sci/.venv/bin/python"
+    }
+  }
+}
