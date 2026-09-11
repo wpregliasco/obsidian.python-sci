@@ -4,5 +4,7 @@
     "fix_callouts",
     "key",
     "presentation"
-  ]
+  ],
+  "showViewHeader": true,
+  "showRibbon": true
 }
