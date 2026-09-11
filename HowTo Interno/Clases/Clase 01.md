@@ -5,7 +5,7 @@ theme: gaia
 # Python Científico
 
 
-![bg left:40%  120%](../../Imgs/Pasted%20image%2020260831141210.png)
+![bg left:50%  100%](../../Imgs/Pasted%20image%2020260831141210.png)
 
 ## Admin
 
