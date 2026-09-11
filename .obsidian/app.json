@@ -6,5 +6,9 @@
   "alwaysUpdateLinks": true,
   "focusNewTab": false,
   "propertiesInDocument": "visible",
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "attachmentFolderPath": "./Imgs",
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "showUnsupportedFiles": true
 }

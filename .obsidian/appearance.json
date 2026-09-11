@@ -3,7 +3,8 @@
     "edit-color",
     "fix_callouts",
     "key",
-    "presentation"
+    "presentation",
+    "spacer"
   ],
   "showViewHeader": true,
   "showRibbon": true

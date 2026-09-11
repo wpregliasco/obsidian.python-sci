@@ -1,0 +1,25 @@
+.spacer .spacer20 {
+  display: block;
+  height: 20vh; /* ocupa casi toda la pantalla visible */
+}
+
+.spacer .spacer40 {
+  display: block;
+  height: 40vh; /* ocupa casi toda la pantalla visible */
+}
+
+.spacer .spacer60 {
+  display: block;
+  height: 60vh; /* ocupa casi toda la pantalla visible */
+}
+
+.spacer .spacer90 {
+  display: block;
+  height: 90vh; /* ocupa casi toda la pantalla visible */
+}
+
+.spacer-page {
+  display: block;
+  height: 100vh;
+  break-after: page; /* opcional: fuerza salto también al exportar/imprimir */
+}

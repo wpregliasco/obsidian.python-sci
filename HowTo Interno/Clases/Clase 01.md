@@ -1,7 +1,28 @@
+---
+footer: "Instituto Balseiro - Python Científico : Clase 1"
+theme: gaia
+---
+# Python Científico
 
-# Clase 1 
 
+![bg left:40%  120%](../../Imgs/Pasted%20image%2020260831141210.png)
 
+## Admin
+
+- Materia: Título
+- Docentes
+- Inscripción
+- Aprobación
+- Dinámica
+- Horarios
+
+--- 
+
+### Admin::Admin
+
+- Clase:   LAN   http://python.local
+- Online:      https://wpregliasco.github.io/python-sci/
+## Content
 - Inscripción y contexto
 - Servidor y red locales
 - Jupyter (?)
@@ -28,7 +49,7 @@
 - Matplotlib - pretexto para presentar el import y las standard libraries
 	- help ('modules')
 
-# Biblioteca Estándar de Python 3.12 (Módulos Principales)
+### Biblioteca Estándar de Python 3.12 (Módulos Principales)
 
 ### ⚙️ Servicios del Sistema y del Sistema Operativo
 * **`os`**: Interfaces misceláneas del sistema operativo (archivos, rutas, procesos).
@@ -84,4 +105,4 @@
 * **`logging`**: Sistema de registro de eventos y logs.
 
 
-![[Pasted image 20260911141233.png]]
+![Pasted image 20260911141233.png](../../Imgs/Pasted image 20260911141233.png)

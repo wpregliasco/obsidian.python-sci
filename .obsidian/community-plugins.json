@@ -11,5 +11,6 @@
   "open-tab-settings",
   "obsidian-meta-bind-plugin",
   "obsidian-shellcommands",
-  "jupymd"
+  "jupymd",
+  "marp-slides"
 ]
