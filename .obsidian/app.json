@@ -7,7 +7,7 @@
   "focusNewTab": false,
   "propertiesInDocument": "visible",
   "showInlineTitle": false,
-  "attachmentFolderPath": "./Imgs",
+  "attachmentFolderPath": "Imgs",
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
   "showUnsupportedFiles": true

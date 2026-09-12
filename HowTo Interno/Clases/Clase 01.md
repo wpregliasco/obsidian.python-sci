@@ -1,30 +1,119 @@
 ---
-footer: "Instituto Balseiro - Python Científico : Clase 1"
 theme: gaia
 ---
+
 # Python Científico
-
-
+## de la ecuación al programa
 ![bg left:50%  100%](../../Imgs/Pasted%20image%2020260831141210.png)
 
-## Admin
+--- 
+![bg right:35%  70%](../../Imgs/Pasted%20image%2020260911175721.png)
 
-- Materia: Título
-- Docentes
+## Admin IB
+### Python Científico: de la ecuación al programa
+
 - Inscripción
+	- grado: `Siu Guaraní: Autogestión`
+	- posgrado: formulario recibido email
+	- vocacionales: formulario por email
+- La inscripción cierra pronto 
+- 64 horas de clase: 4x16
+
+---
+![bg right:30%  80%](../../Imgs/macana-hermanos-macana.gif)
+## Admin Cátedra
+	Mariano Gómez Berisso
+	Willy Pregliasco
+- Clases presenciales
 - Aprobación
-- Dinámica
+- Dinámica: 4 horas de clase-taller
 - Horarios
+	- Martes de 14:00 a 18:00 
+	- Jueves de 8:30 a 12:30
 
 --- 
+### Admin Clases
 
-### Admin::Admin
 
-- Clase:   LAN   http://python.local
-- Online:      https://wpregliasco.github.io/python-sci/
+| contexto | URL                                        |
+| -------- | ------------------------------------------ |
+| local    | `http://python.local`                      |
+| online   | `https://wpregliasco.github.io/python-sci` |
+
+* Notas de clase
+* Pantallas de los docentes
+* Jupyter server
+	* TPs
+
+---
+![bg fit](../../Imgs/Pasted%20image%2020260911141233.png)
+# `Python?`
+
+[xkcd](https://xkcd.com/)
+
+---
+## Monthy Python
+![](../../Imgs/Pasted%20image%2020260911183924.png)
+
+[Ministry of Silly Walks](https://www.youtube.com/watch?v=-Fx0qJNhy9U)
+
+---
+![bg right 80%](../../Imgs/Pasted%20image%2020260911192400.png)
+
+## Python
+
+
+Guido van Rossum - Navidad de 1989
+
+* [Historia(video)](https://www.youtube.com/watch?v=J0Aq44Pze-w) -- [Historia(wiki)](https://en.wikipedia.org/wiki/History_of_Python)
+* **2000** Python 2.0: BeOpen PythonLabs 
+* **2008** Python 3.0 (Py3K)
+* **2026** Python 3.14
+
+---
+## Jupyter
+![bg right](../../Imgs/Pasted%20image%2020260911193321.png)
+
+Celdas:
+- texto (makdown)
+- código (python, Julia, C, ...)
+
+ _Se ejecutan con `Shift-Enter`_
+ _y generan un `output`_
+
+---
+## Markdown (headings)
+![bg right:20% 80%](../../Imgs/Pasted%20image%2020260911194051.png)
+
+![](../../Imgs/Pasted%20image%2020260911204514.png)
+
+---
+## Markdown (items)
+<!-- 
+![bg right:20% 80%](../../Imgs/Pasted%20image%2020260911194051.png)
+-->
+
+![](../../Imgs/Pasted%20image%2020260911204908.png)
+
+---
+## Markdown (code)
+
+
+---
+## Markdown (latex ++)
+
+
+---
+![bg opacity:0.3](../../Imgs/Pasted%20image%2020260911210734.png)
+<!-- _color: black -->
+
+# A los programas !
+
+(TP0)
+
+---
 ## Content
-- Inscripción y contexto
-- Servidor y red locales
+
 - Jupyter (?)
 - Operdor =
 - Variables Numéricas
