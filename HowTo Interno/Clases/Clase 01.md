@@ -4,7 +4,7 @@ theme: gaia
 
 # Python Científico
 ## de la ecuación al programa
-![bg left:50%  100%](../../Imgs/Pasted%20image%2020260831141210.png)
+![bg left:50% 100%](../../Imgs/Pasted%20image%2020260831141210.png)
 
 --- 
 ![bg right:35%  70%](../../Imgs/Pasted%20image%2020260911175721.png)
@@ -96,12 +96,17 @@ Celdas:
 ![](../../Imgs/Pasted%20image%2020260911204908.png)
 
 ---
-## Markdown (code)
+## Markdown 
+![bg right:50% 80%](../../Imgs/Pasted%20image%2020260911194051.png)
 
-
----
-## Markdown (latex ++)
-
+- code
+- latex
+- tables
+- images
+- links
+- diagrams
+- references
+- ...
 
 ---
 ![bg opacity:0.3](../../Imgs/Pasted%20image%2020260911210734.png)
