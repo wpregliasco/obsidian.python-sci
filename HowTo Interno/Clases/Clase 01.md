@@ -37,15 +37,17 @@ theme: gaia
 
 | contexto | URL                                        |
 | -------- | ------------------------------------------ |
+| red      | `scipy`  (sin passwd)                      |
 | local    | `http://python.local`                      |
 | online   | `https://wpregliasco.github.io/python-sci` |
 
-* Notas de clase
+* Notas de clase 
 * Pantallas de los docentes
 * Jupyter server
 	* TPs
 
 ---
+
 ![bg fit](../../Imgs/Pasted%20image%2020260911141233.png)
 # `Python?`
 
@@ -71,6 +73,21 @@ Guido van Rossum - Navidad de 1989
 * **2026** Python 3.14
 
 ---
+## El Python es una mierda
+<style scoped> section { font-size: 30px; } </style>
+
+- Las variables no tienen tipo asignado y se puede cambiar
+- Los espacios tienen significado semántico
+- No compila código fuente
+- La instalación es múltiple
+- El intercambio de programas es imposible
+- Nomenclatura de los objetos no sigue ninguna tradición
+- Los objetos se pasa como referencia
+- El scope es "lo que convenga"
+- Es lento
+- Es ineficiente en el uso y liberación de memoria
+
+---
 ## Jupyter
 ![bg right](../../Imgs/Pasted%20image%2020260911193321.png)
 
@@ -83,7 +100,9 @@ Celdas:
 
 ---
 ## Markdown (headings)
+<!--
 ![bg right:20% 80%](../../Imgs/Pasted%20image%2020260911194051.png)
+-->
 
 ![](../../Imgs/Pasted%20image%2020260911204514.png)
 
@@ -119,7 +138,7 @@ Celdas:
 ---
 ## Content
 
-- Jupyter (?)
+
 - Operdor =
 - Variables Numéricas
 	- tipos: int, float, double
