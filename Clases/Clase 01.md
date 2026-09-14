@@ -4,10 +4,10 @@ theme: gaia
 
 # Python Científico
 ## de la ecuación al programa
-![bg left:50% 100%](../../Imgs/Pasted%20image%2020260831141210.png)
+![bg left:50% 100%](../Imgs/Pasted%20image%2020260831141210.png)
 
 --- 
-![bg right:35%  70%](../../Imgs/Pasted%20image%2020260911175721.png)
+![bg right:35%  70%](../Imgs/Pasted%20image%2020260911175721.png)
 
 ## Admin IB
 ### Python Científico: de la ecuación al programa
@@ -20,7 +20,7 @@ theme: gaia
 - 64 horas de clase: 4x16
 
 ---
-![bg right:30%  80%](../../Imgs/macana-hermanos-macana.gif)
+![bg right:30%  80%](../Imgs/macana-hermanos-macana.gif)
 ## Admin Cátedra
 	Mariano Gómez Berisso
 	Willy Pregliasco
@@ -48,19 +48,19 @@ theme: gaia
 
 ---
 
-![bg fit](../../Imgs/Pasted%20image%2020260911141233.png)
+![bg fit](../Imgs/Pasted%20image%2020260911141233.png)
 # `Python?`
 
 [xkcd](https://xkcd.com/)
 
 ---
 ## Monthy Python
-![](../../Imgs/Pasted%20image%2020260911183924.png)
+![](..//Imgs/Pasted%20image%2020260911183924.png)
 
 [Ministry of Silly Walks](https://www.youtube.com/watch?v=-Fx0qJNhy9U)
 
 ---
-![bg right 80%](../../Imgs/Pasted%20image%2020260911192400.png)
+![bg right 80%](../Imgs/Pasted%20image%2020260911192400.png)
 
 ## Python
 
@@ -73,7 +73,7 @@ Guido van Rossum - Navidad de 1989
 * **2026** Python 3.14
 
 ---
-## El Python es una mierda
+## Python es una mierda
 <style scoped> section { font-size: 30px; } </style>
 
 - Las variables no tienen tipo asignado y se puede cambiar
@@ -86,6 +86,18 @@ Guido van Rossum - Navidad de 1989
 - El scope es "lo que convenga"
 - Es lento
 - Es ineficiente en el uso y liberación de memoria
+
+---
+## Python es genial
+
+- La sintaxis se lee como inglés
+- Es Open Source
+- La comunidad es fabulosa
+	- desarrolla bibliotecas
+	- buena documentación
+- Backend y frontend
+- Se pueden hacer rápido proyectos grandes
+- Se pueden escalar a proyectos de producción
 
 ---
 ## Jupyter
@@ -134,6 +146,43 @@ Celdas:
 # A los programas !
 
 (TP0)
+
+---
+<style scoped> section { font-size: 30px; } </style>
+## Variables
+
+- en matemáticas:
+  $$ x + 3 = 5 $$
+ $$ y = x + 1 $$
+
+- en programación:
+  ```text
+  a = 2
+  ```
+   - no tiene sentido
+     ```text
+        2 = a
+        x + 3 = 5
+     ```
+
+---
+## Declaración
+<style scoped> section { font-size: 28px; } </style>
+lenguajes tipificados (C, Java)
+  ```C
+  // declaraciones
+  int a=1, b;
+  int c;
+  // operacioes
+  b = 1;
+  c = a + b
+  ```
+Python
+```Python
+  a = 1
+  a = 'Holaaaa!'
+  a = [1,2,3]
+```
 
 ---
 ## Content
