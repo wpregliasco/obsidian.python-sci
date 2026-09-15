@@ -10,7 +10,7 @@
   "obsidian-heading-shifter",
   "open-tab-settings",
   "obsidian-meta-bind-plugin",
-  "obsidian-shellcommands",
   "jupymd",
-  "marp-slides"
+  "marp-slides",
+  "obsidian-shellcommands"
 ]
