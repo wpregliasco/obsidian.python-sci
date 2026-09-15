@@ -101,7 +101,7 @@ Guido van Rossum - Navidad de 1989
 
 ---
 ## Jupyter
-![bg right](../../Imgs/Pasted%20image%2020260911193321.png)
+![bg right](../Imgs/Pasted%20image%2020260911193321.png)
 
 Celdas:
 - texto (makdown)
@@ -116,7 +116,7 @@ Celdas:
 ![bg right:20% 80%](../../Imgs/Pasted%20image%2020260911194051.png)
 -->
 
-![](../../Imgs/Pasted%20image%2020260911204514.png)
+![w:1000](../Imgs/Pasted%20image%2020260911204514.png)
 
 ---
 ## Markdown (items)
@@ -124,7 +124,7 @@ Celdas:
 ![bg right:20% 80%](../../Imgs/Pasted%20image%2020260911194051.png)
 -->
 
-![](../../Imgs/Pasted%20image%2020260911204908.png)
+![w:1000](../Imgs/Pasted%20image%2020260911204908.png)
 
 ---
 ## Markdown 
@@ -140,7 +140,7 @@ Celdas:
 - ...
 
 ---
-![bg opacity:0.3](../../Imgs/Pasted%20image%2020260911210734.png)
+![bg opacity:0.3](../Imgs/Pasted%20image%2020260911210734.png)
 <!-- _color: black -->
 
 # A los programas !
@@ -168,7 +168,7 @@ Celdas:
 ---
 ## Declaración
 <style scoped> section { font-size: 28px; } </style>
-lenguajes tipificados (C, Java)
+Lenguajes tipificados (C, Java)
   ```C
   // declaraciones
   int a=1, b;
@@ -177,7 +177,7 @@ lenguajes tipificados (C, Java)
   b = 1;
   c = a + b
   ```
-Python
+No tipificados: Python
 ```Python
   a = 1
   a = 'Holaaaa!'
@@ -188,7 +188,7 @@ Python
 ## Content
 
 
-- Operdor =
+- Operador =
 - Variables Numéricas
 	- tipos: int, float, double
 	- operadores binarios y ternarios
