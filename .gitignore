@@ -2,6 +2,7 @@
 *.html
 
 # Ignore sensitive plugin data/keys (API keys, tokens, local settings)
+.obsidian/
 .obsidian/plugins/*/data.json
 
 # Ignore workspace and cache files
