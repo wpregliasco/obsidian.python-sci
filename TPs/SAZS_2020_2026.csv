@@ -1,4 +1,4 @@
-station,fecha,timestamp,lon,lat,elevation,temp,dewpt,wind_dir,wind_speed,press
+station,date,timestamp,lon,lat,elevation,temp,dewpt,wind_dir,wind_speed,press
 SAZS,2020-01-01 00:00,1577847600.0,-71.1575,-41.1512,840.00,23.0,7.0,270.0,7.0,1015.0
 SAZS,2020-01-01 01:00,1577851200.0,-71.1575,-41.1512,840.00,21.0,8.0,270.0,6.0,1015.0
 SAZS,2020-01-01 02:00,1577854800.0,-71.1575,-41.1512,840.00,17.0,7.0,140.0,4.0,1016.0
