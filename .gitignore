@@ -1,8 +1,0 @@
-# Ignore sensitive plugin data/keys (API keys, tokens, local settings)
-.obsidian/plugins/*/data.json
-
-# Ignore workspace and cache files
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.trash/
-.DS_Store
