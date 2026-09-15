@@ -1,0 +1,14 @@
+{
+  "defaultViewMode": "preview",
+  "spellcheck": false,
+  "settingsPopoutWindow": false,
+  "readableLineLength": false,
+  "alwaysUpdateLinks": true,
+  "focusNewTab": false,
+  "propertiesInDocument": "visible",
+  "showInlineTitle": false,
+  "attachmentFolderPath": "Imgs",
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "showUnsupportedFiles": true
+}

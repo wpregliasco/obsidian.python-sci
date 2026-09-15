@@ -1,0 +1,22 @@
+.theme-dark {
+    --custom-bg-edit: #24273A;
+    --custom-bg-read: #04140A;
+    --text-normal: #F1FBDA;
+}
+
+.theme-light {
+    --custom-bg-edit: #FAFAFA;
+    --custom-bg-read: #FFFFFF;
+    --text-normal: #1A1A1A;
+    --text-accent: #2563EB;   /* readable blue */
+    --text-muted: #6B7280;
+}
+
+.markdown-source-view.mod-cm6,
+.workspace-leaf-content[data-mode="source"] .view-content {
+    background-color: var(--custom-bg-edit);
+}
+
+.workspace-leaf-content[data-mode="preview"] .view-content {
+    background-color: var(--custom-bg-read);
+}

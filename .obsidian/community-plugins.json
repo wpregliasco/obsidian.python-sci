@@ -10,7 +10,14 @@
   "obsidian-heading-shifter",
   "open-tab-settings",
   "obsidian-meta-bind-plugin",
+<<<<<<< HEAD
   "jupymd",
   "marp-slides",
   "obsidian-shellcommands"
+||||||| parent of 4e2f938 (new .gitignore)
+=======
+  "obsidian-shellcommands",
+  "jupymd",
+  "marp-slides"
+>>>>>>> 4e2f938 (new .gitignore)
 ]

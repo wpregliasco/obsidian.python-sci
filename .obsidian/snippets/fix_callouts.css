@@ -1,0 +1,4 @@
+.theme-light .callout {
+    background-color: rgba(0, 0, 0, 0.05); /* Light grey background */
+    border-left: 5px solid rgba(0, 0, 0, 0.2); /* Slightly darker border */
+}

@@ -1,0 +1,5 @@
+img[alt^="bg"] {
+  max-width: 250px;
+  max-height: 200px;
+  object-fit: contain;
+}

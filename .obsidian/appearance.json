@@ -1,0 +1,12 @@
+{
+  "enabledCssSnippets": [
+    "edit-color",
+    "fix_callouts",
+    "key",
+    "presentation",
+    "spacer",
+    "marp_bg_imgs"
+  ],
+  "showViewHeader": true,
+  "showRibbon": true
+}
