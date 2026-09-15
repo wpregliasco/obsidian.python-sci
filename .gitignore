@@ -1,5 +1,5 @@
 # Ignore slideshows rendering
-.html
+*.html
 
 # Ignore sensitive plugin data/keys (API keys, tokens, local settings)
 .obsidian/plugins/*/data.json
