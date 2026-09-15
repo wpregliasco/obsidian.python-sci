@@ -1,23 +1,15 @@
 [
-  "obsidian42-brat",
-  "quartz-syncer",
-  "obsidian-git",
-  "insta-toc",
   "table-editor-obsidian",
   "callout-menu",
   "colored-tags",
   "dataview",
+  "obsidian-git",
   "obsidian-heading-shifter",
-  "open-tab-settings",
-  "obsidian-meta-bind-plugin",
-<<<<<<< HEAD
+  "insta-toc",
   "jupymd",
   "marp-slides",
+  "obsidian-meta-bind-plugin",
+  "open-tab-settings",
+  "quartz-syncer",
   "obsidian-shellcommands"
-||||||| parent of 4e2f938 (new .gitignore)
-=======
-  "obsidian-shellcommands",
-  "jupymd",
-  "marp-slides"
->>>>>>> 4e2f938 (new .gitignore)
 ]

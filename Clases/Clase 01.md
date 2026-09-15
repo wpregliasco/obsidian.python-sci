@@ -267,4 +267,4 @@ No tipificados: Python
 * **`logging`**: Sistema de registro de eventos y logs.
 
 
-![Pasted image 20260911141233.png](../../Imgs/Pasted image 20260911141233.png)
+![Pasted image 20260911141233.png](../Imgs/Pasted image 20260911141233.png)
