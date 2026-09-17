@@ -211,6 +211,8 @@ No tipificados: Python
 - Matplotlib - pretexto para presentar el import y las standard libraries
 	- help ('modules')
 
+- Funciones builtin
+
 ### Biblioteca Estándar de Python 3.12 (Módulos Principales)
 
 ### ⚙️ Servicios del Sistema y del Sistema Operativo
