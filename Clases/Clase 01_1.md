@@ -148,3 +148,15 @@ Celdas:
 (TP0 + TP01)
 
 ---
+## Propuestas de trabajo
+
+- chequear si lat, long elevation es igual en todos (`any`, `all`)
+- intervalo de mediciones
+- Bines por día, mes y año
+- Gráficos con eje x comprensible
+- Gráfico con puntitos y eligiendo el color
+- Gráficos con temp y dewpoint
+- Dirección principal del viento
+
+---
+

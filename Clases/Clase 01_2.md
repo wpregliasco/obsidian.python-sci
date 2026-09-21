@@ -4,7 +4,19 @@ theme: gaia
 
 # Python Científico
 ## de la ecuación al programa
-![bg left:50% 100%](../Imgs/Pasted%20image%2020260831141210.png)
+
+
+```Python
+# No integer overflow
+numerazo = 2**10000
+print(len(str(numerazo)), "\n", numerazo)
+
+
+# Flotando imprecisiones
+0.1 + 0.1 + 0.1 == 0.3   # <-- False
+
+```
+
 
 
 ---
@@ -45,35 +57,119 @@ No tipificados: Python
 ```
 
 ---
-## Content
+## Asignación
+- variable: tag
+- objeto
+- valor
+
+![](../Imgs/Pasted%20image%2020260921142600.png)
+
+---
+
+## Modificación
+
+![](../Imgs/Pasted%20image%2020260921143029.png)
+
+![](../Imgs/Pasted%20image%2020260921143108.png)
+
+---
+<style scoped> section { font-size: 25px; } </style>
+## Mutables
+`list`, `dict`, `set`
+
+![](../Imgs/Pasted%20image%2020260921143240.png)
+
+## Inmutables
+`int`, `float`, `tuple`
+
+```Python
+>>> a = (10, 11)
+>>> a[0] = 20
+TypeError: 'tuple' object does not support item assignment
+```
+
+---
+## Reasignación de variables
+
+![](../Imgs/Pasted%20image%2020260921145915.png)
 
 
-- Operador =
-- Variables Numéricas
-	- tipos: int, float, double
-	- operadores binarios y ternarios
-- Listas
-	- Creación
-		- declaración
-		- `list()` 
-		- comprehension
-	- Acceso
-		- index (+-)
-		- slicing
-		- methods
-	- Modificación
-		- index value
-		- append
-	- len() y range()
-- Lectura de archivos
-	- open / close
-	- with
-- Matplotlib - pretexto para presentar el import y las standard libraries
-	- help ('modules')
+![](../Imgs/Pasted%20image%2020260921145953.png)
 
-- Funciones builtin
+---
+## Los objetos mutables, mutan un mismo objeto
 
-### Biblioteca Estándar de Python 3.12 (Módulos Principales)
+![](../Imgs/Pasted%20image%2020260921150131.png)
+
+😱 🤯
+
+---
+## Objeto:  🐍
+
+- propiedades `🐍.prop`
+- métodos  `🐍.meth()`
+- `type(🐍)`
+- `help(🐍)`
+
+---
+## Objetos Numéricos
+
+
+| `int`                    | `bool`            | `float`                | `complex`                        |
+| ------------------------ | ----------------- | ---------------------- | -------------------------------- |
+| asignación automática    | `True`/`False`    | doble precisión (64b)  | `3+5j`                           |
+| no limit! : `-2**10000`  | (int) 1/0         | hasta 10^308           | dos `float`                      |
+| underscores: `1_000_000` |                   | 16 decimales           | `.real`, `.imag`, `.conjugate()` |
+| `/`, `//`, `%`, `divmod` | `and`, `or`,`not` | notación sci: `3.2e-4` | `+`, `-`, `*`, `/`,`**`          |
+
+
+
+
+---
+<style scoped> section { font-size: 28px; } </style>
+## Objetos secuenciales
+
+| `list`        | `tuple`       | `range`      |
+| ------------- | ------------- | ------------ |
+| `[1,2,3,4,5]` | `(1,2,3,4,5)` | `range(1,6)` |
+- relleno libre e inconsistente
+- comprehension: `a = [item for item in range(1,4)]`
+- indexing  `a[2]`, `a[-1]`
+- slicing `a[2:]`, `a[:2]`, `a[2:3]`, `a[:-1:2]`, `a[:-1:-1]`
+- método `append()`, concatenación `+`
+- función `len()`
+- pertenencia `5 in [2,6,5,7,9] <- True`
+
+---
+## Iteradores
+
+```Python
+for coso in [1,"banana", (3,2), 8+1j]:
+	print(coso)
+
+Out:	
+	1
+	banana
+	(3, 2)
+	(8+1j)
+```
+
+---
+## Built-in functions
+
+![bg right:50% 85%](../Imgs/Pasted%20image%2020260921163815.png)
+
+[Referencia](https://docs.python.org/3/builtins/functions.html)
+
+---
+
+## Biblioteca Estándar de Python 3.12 (Módulos Principales)
+
+<style scoped> 
+	section { column-count: 2; column-gap: 2rem; font-size: 12px; } 
+	h2 { column-span: all;  font-size:25px; text-align: center; padding-bottom: 1em;} 
+</style>
+
 
 ### ⚙️ Servicios del Sistema y del Sistema Operativo
 * **`os`**: Interfaces misceláneas del sistema operativo (archivos, rutas, procesos).
@@ -99,7 +195,7 @@ No tipificados: Python
 * **`pickle`**: Serialización y persistencia de objetos de Python.
 * **`sqlite3`**: Interfaz integrada para bases de datos relacionales SQLite.
 
-### 🗜️ Compresión y Archivo
+### 🗜️ Compresión
 * **`zipfile`** y **`tarfile`**: Manipulación de archivos comprimidos ZIP y TAR.
 * **`zlib`**, **`gzip`**, **`bz2`**, **`lzma`**: Algoritmos y herramientas de compresión de datos.
 
@@ -127,6 +223,3 @@ No tipificados: Python
 * **`timeit`**: Medición del tiempo de ejecución de pequeños fragmentos de código.
 * **`venv`**: Creación y gestión de entornos virtuales aislados.
 * **`logging`**: Sistema de registro de eventos y logs.
-
-
-![Pasted image 20260911141233.png](../Imgs/Pasted image 20260911141233.png)

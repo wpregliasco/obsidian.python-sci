@@ -16,3 +16,12 @@
 - Módulos para leer un csv o un archivo de texto
 - Script
 
+
+| `set`     | `dict`              |
+| --------- | ------------------- |
+| `{1,2,3}` | `{'x': 1, 'y': 22}` |
+|           | `{key: value}`      |
+strings
+
+
+
