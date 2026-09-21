@@ -5,3 +5,7 @@
 
 ![](../Imgs/Pasted%20image%2020260920202708.png)
 
+
+# TP 01
+
+## Ideas a mejorar
