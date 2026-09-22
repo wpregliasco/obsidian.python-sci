@@ -4,6 +4,7 @@ theme: gaia
 
 # Python Científico
 ## de la ecuación al programa
+### Clase 1b
 
 
 ```Python
