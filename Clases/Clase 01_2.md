@@ -19,6 +19,16 @@ print(len(str(numerazo)), "\n", numerazo)
 ```
 
 
+---
+## Correr Notebooks fuera de clase
+
+- Los notebooks están contenidos en archivos `.ipynb` 
+- Son archivos que contenen las celdas de entrada y las salidas en modo texto 
+  _(¡incluso los gráficos !)_
+- Pueden hacer _Download_ desde el servidor de la cátedra
+  &nbsp;
+- En _Google Drive_ pueden crear _New Google Colaboratory_  y ya tienen un notebook que se guarda en el drive y corre en los servidores de la nube.
+
 
 ---
 <style scoped> section { font-size: 30px; } </style>
