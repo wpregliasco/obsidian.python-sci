@@ -120,6 +120,7 @@ TypeError: 'tuple' object does not support item assignment
 - métodos  `🐍.meth()`
 - `type(🐍)`
 - `help(🐍)`
+- string(🐍),  repr(🐍)
 
 ---
 ## Objetos Numéricos

@@ -99,6 +99,16 @@ Guido van Rossum - Navidad de 1989
 - Se pueden hacer rápido proyectos grandes
 - Se pueden escalar a proyectos de producción
 
+## Gobernanza 
+
+- Guido van Rossum --> Benevolent Dictator for Life: (BDFL)
+- Los PEPs (Python Enhancement Proposals)
+	- PEP 0: Index
+	- PEP 8: Readability
+	- PEP 20: Zen of Python (`import this`)
+	- `import antigravity`
+- Operador morsa -- Julio 2018 -- Python Steering Council (5)
+
 ---
 ## Jupyter
 ![bg right](../Imgs/Pasted%20image%2020260911193321.png)
