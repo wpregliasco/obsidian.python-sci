@@ -1,4 +1,17 @@
-# Clase 02
+---
+theme: gaia
+---
+# Python Científico
+## de la ecuación al programa
+### Clase 2
+![bg left:50% 100%](../Imgs/python_install.png)
+
+- Instalar y usar Python local
+- variables `string`
+- scripts, modules and packages
+- loops y estructuras de control
+
+---
 
 - Tipos de Variables
 	- num
