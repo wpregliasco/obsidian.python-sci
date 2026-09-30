@@ -10,16 +10,14 @@ trim
 
 ## Funciones para trabajasr con listas
 
-range
-enumerate
-append / extend
-zip
+`range`: genera una lista de elementos
+`enumerate`:  genera una lista de indices
+`append / extend`: agrea uno / varios elementos
+`zip`: concatena listas 
 
-|   |   |
-|---|---|
-|`index(x)`|Devuelve el índice de la primera ocurrencia|
-|`count(x)`|Cuenta cuántas veces aparece `x`|
-|`in`|Verifica pertenencia|
+`index`: devuelve el índice de la primera ocurrencias
+`count`: cuenta cuántas veces aparece `x`
+`in`: cerifica pertenencia
 
 
 
