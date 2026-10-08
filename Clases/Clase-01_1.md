@@ -5,10 +5,10 @@ publish: "true"
 
 # Python Científico
 ## de la ecuación al programa
-![bg left:50% 100%](../Imgs/Pasted%20image%2020260831141210.png)
+![bg left:50% 100%](../Imgs/Clase-01_1.png)
 
 --- 
-![bg right:35%  70%](../Imgs/Pasted%20image%2020260911175721.png)
+![bg right:35%  70%](../Imgs/Clase-01_1-1.png)
 
 ## Admin IB
 ### Python Científico: de la ecuación al programa
@@ -21,7 +21,7 @@ publish: "true"
 - 64 horas de clase: 4x16
 
 ---
-![bg right:30%  80%](../Imgs/macana-hermanos-macana.gif)
+![bg right:30%  80%](../Imgs/Clase-01_1.gif)
 ## Admin Cátedra
 	Mariano Gómez Berisso
 	Willy Pregliasco
@@ -49,19 +49,19 @@ publish: "true"
 
 ---
 
-![bg fit](../Imgs/Pasted%20image%2020260911141233.png)
+![bg fit](../Imgs/Clase-01_1-2.png)
 # `Python?`
 
 [xkcd](https://xkcd.com/)
 
 ---
 ## Monthy Python
-![](..//Imgs/Pasted%20image%2020260911183924.png)
+![](../Imgs/Clase-01_1-3.png)
 
 [Ministry of Silly Walks](https://www.youtube.com/watch?v=-Fx0qJNhy9U)
 
 ---
-![bg right 80%](../Imgs/Pasted%20image%2020260911192400.png)
+![bg right 80%](../Imgs/Clase-01_1-4.png)
 
 ## Python
 
@@ -112,7 +112,7 @@ Guido van Rossum - Navidad de 1989
 
 ---
 ## Jupyter
-![bg right](../Imgs/Pasted%20image%2020260911193321.png)
+![bg right](../Imgs/Clase-01_1-5.png)
 
 Celdas:
 - texto (makdown)
@@ -127,7 +127,7 @@ Celdas:
 ![bg right:20% 80%](../../Imgs/Pasted%20image%2020260911194051.png)
 -->
 
-![w:1000](../Imgs/Pasted%20image%2020260911204514.png)
+![w:1000](../Imgs/Clase-01_1-6.png)
 
 ---
 ## Markdown (items)
@@ -135,11 +135,11 @@ Celdas:
 ![bg right:20% 80%](../../Imgs/Pasted%20image%2020260911194051.png)
 -->
 
-![w:1000](../Imgs/Pasted%20image%2020260911204908.png)
+![w:1000](../Imgs/Clase-01_1-7.png)
 
 ---
 ## Markdown 
-![bg right:50% 80%](../../Imgs/Pasted%20image%2020260911194051.png)
+![bg right:50% 80%](../Imgs/Clase-01_1-8.png)
 
 - code
 - latex
@@ -151,7 +151,7 @@ Celdas:
 - ...
 
 ---
-![bg opacity:0.3](../Imgs/Pasted%20image%2020260911210734.png)
+![bg opacity:0.3](../Imgs/Clase-01_1-9.png)
 <!-- _color: black -->
 
 # A los programas !

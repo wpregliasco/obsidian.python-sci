@@ -73,22 +73,22 @@ No tipificados: Python
 - objeto
 - valor
 
-![](../Imgs/Pasted%20image%2020260921142600.png)
+![](../Imgs/Clase-01_2.png)
 
 ---
 
 ## Modificación
 
-![](../Imgs/Pasted%20image%2020260921143029.png)
+![](../Imgs/Clase-01_2-1.png)
 
-![](../Imgs/Pasted%20image%2020260921143108.png)
+![](../Imgs/Clase-01_2-2.png)
 
 ---
 <style scoped> section { font-size: 25px; } </style>
 ## Mutables
 `list`, `dict`, `set`
 
-![](../Imgs/Pasted%20image%2020260921143240.png)
+![](../Imgs/Clase-01_2-3.png)
 
 ## Inmutables
 `int`, `float`, `tuple`
@@ -102,15 +102,15 @@ TypeError: 'tuple' object does not support item assignment
 ---
 ## Reasignación de variables
 
-![](../Imgs/Pasted%20image%2020260921145915.png)
+![](../Imgs/Clase-01_2-4.png)
 
 
-![](../Imgs/Pasted%20image%2020260921145953.png)
+![](../Imgs/Clase-01_2-5.png)
 
 ---
 ## Los objetos mutables, mutan un mismo objeto
 
-![](../Imgs/Pasted%20image%2020260921150131.png)
+![](../Imgs/Clase-01_2-6.png)
 
 😱 🤯
 
@@ -169,7 +169,7 @@ Out:
 ---
 ## Built-in functions
 
-![bg right:50% 85%](../Imgs/Pasted%20image%2020260921163815.png)
+![bg right:50% 85%](../Imgs/Clase-01_2-7.png)
 
 [Referencia](https://docs.python.org/3/builtins/functions.html)
 
