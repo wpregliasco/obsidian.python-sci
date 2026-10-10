@@ -5,7 +5,7 @@ publish: "false"
 # Python Científico
 ## de la ecuación al programa
 ### Clase 3a
-![300](../Imgs/Clase-03_1.png)
+![200](../Imgs/Clase-03_1.png)
 
 
 - `def`, `lambda`, `map`, `sorted`, y `filter`
