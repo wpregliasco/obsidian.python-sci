@@ -72,6 +72,8 @@ print(nombre)
 ```
 Mas aun, si modifico el valor de la variable local **no** se modifica el valor  de la instancia superior.
 
+## Modificador `global`
+
 Si quiero explicitamente que pueda modificar los valores de las variables desde fuera de la funcion tengo que aclararlos mediate la directiva `global`.
 
 ```python
@@ -89,3 +91,40 @@ saludar()
 print(nombre)         
 ```
 
+## Modificador `nolocal`
+
+`nonlocal` es parecido a global, pero se utiliza con funciones anidadas...
+
+```python
+def contador():
+	n = 0
+	def incrementar():
+		nonlocal n
+		n += 1
+		return n
+	return incrementar
+	
+c1 = contador() # crea el contador UNA vez
+c2 = contador()
+
+print(c1()) # 1
+print(c1()) # 2
+print(c1()) # 3
+print()
+print(c2()) #1
+print(c2()) #2
+
+```
+## Una herramienta excelente: `locals()` y `globals()`
+
+Python permite inspeccionar los nombres disponibles.
+```python
+def prueba():
+    y = 20
+    print(locals())
+    # print(globals())
+
+x = 10
+
+prueba()
+```
