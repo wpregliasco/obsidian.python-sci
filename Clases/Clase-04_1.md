@@ -1,6 +1,19 @@
 ---
 theme: gaia
 publish: "false"
+jupyter:
+  jupytext:
+    cell_metadata_filter: -all
+    formats: ipynb,md
+    text_representation:
+      extension: .md
+      format_name: markdown
+      format_version: '1.3'
+      jupytext_version: 1.19.5
+  kernelspec:
+    display_name: Python (.venv)
+    language: python
+    name: jupymd-.venv-2a5df0dee3
 ---
 # Python Científico
 ## de la ecuación al programa
@@ -16,37 +29,64 @@ publish: "false"
 
 ## Que son?
 
-Una función es un bloque de código al que le ponemos un nombre y que podemos ejecutar cuando lo necesitemos.
+NumPy (Numerical Python) es una biblioteca fundamental del ecosistema científico de Python. Permite representar y operar con vectores, matrices y arreglos numéricos de manera eficiente. Se utiliza en prácticamente todas las áreas de la física computacional: análisis de datos experimentales, resolución numérica de ecuaciones, simulaciones, procesamiento de señales y cálculo científico.
+
+Supongamos que queremos calcular la posición de una partícula que se mueve con velocidad constante:
+$$
+x(t)=x0+v
+~t
+$$
+esto la calculariamos utilizando una lista:
 ```python
-def saludar():
+x0 = 2.0
+v = 3.0
+tiempos = [0.0, 0.1, 0.2, 0.3, 0.4]
+x = [x0 + v * t for t in tiempos]
 
-print("Hola Mariano")
-
-saludar()
+print(x)
 ```
 
-## Entradas
-
-Los datos que recibe una función se llaman parámetros,
+Con NumPy, la misma operación se expresa directamente:
 ```python
-def saludar(nombre):
-    """
-    Imprimo un saludo personalizado
-    """
-    print(f"Hola {nombre}")
+import numpy as np
 
-saludar("Mariano")
-saludar("Willy")
+x0 = 2.0
+v = 3.0
+t = np.array([0.0, 0.1, 0.2, 0.3, 0.4])
+
+x = x0 + v * t
+
+print(x)
 ```
-pueden ser varios
-```python 
-def resta(a, b):
-    """
-    Imprimo la resta de dos números
-    """
-    print(f"{a}-{b} = {a - b}")
+La segunda expresión aplica la operación a todos los elementos del arreglo. Esta característica se llama **vectorización**.
 
-resta(10, 5)
+NumPy ofrece tres ventajas principales:
+* **Eficiencia**: las operaciones numéricas se ejecutan mediante código compilado, generalmente mucho más rápido que los ciclos explícitos de Python para arreglos grandes.
+* **Expresividad:** las ecuaciones se escriben de una forma cercana a su notación matemática.
+* **Integración**: sus arreglos se utilizan en bibliotecas como SciPy, Matplotlib y pandas.
+
+## El objeto estrella`np.array`
+
+Veamos unos ejemplos:
+```python
+import numpy as np
+
+vector = np.array([270.0, 275.0, 280.0, 285.0])
+
+matriz = np.array([
+    [1.0, 2.0, 3.0],
+    [4.0, 5.0, 6.0]
+])
+
+print(f"{vector = }")
+print(f"{matriz = }")
+```
+propiedades basicas:
+```python
+print(f"{matriz.ndim = }") 
+print(f"{matriz.shape = }")
+print(f"{matriz.size = }")
+print(f"{matriz.dtype = }")
 ```
 O para ser mas presisos
 * `a` y `b` son los parámetros: los nombres definidos en la función.
@@ -56,7 +96,7 @@ O para ser mas presisos
 
 Una diferencia muy importante es entre mostrar un resultado y devolverlo.
 
-```python 
+```python
 def resta(a, b):
 	c = a - b
 	return c
