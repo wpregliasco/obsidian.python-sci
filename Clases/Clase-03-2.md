@@ -4,7 +4,7 @@ publish: "false"
 ---
 # Python Científico
 ## de la ecuación al programa
-### Clase 3a
+### Clase 3b
 ![200](../Imgs/Clase-03_2.png)
 
 
