@@ -129,6 +129,55 @@ print(f"{M[:, 1] = }")
 
 La notación `M[fila, columna]` permite acceder a un elemento; `:` selecciona todos los elementos de una dimensión.
 
+### Selección mediante condiciones
 
+Supongamos que medimos la temperatura de una muestra y queremos identificar los valores supcaeriores a 290 K.
+```python
+T = np.array([289.5, 290.2, 291.0, 288.7, 292.1])
+
+mascara_calientes = T > 290
+mas_calientes = T[mascara_calientes]
+
+print(f"{                T  = }")
+print(f"{ mascara_calientes = }")             
+print(f"{    mas_calientes  = }")
+# [290.2 291.  292.1]
+```
+La expresión `T > 290` genera una máscara booleana. Esta máscara permite seleccionar los elementos que satisfacen la condición.
+
+
+## Copias, vistas y referencias
+
+Este tema suele causar errores sutiles al procesar datos experimentales.
+
+Consideremos:
+```python
+a = np.array([1, 2, 3, 4, 5])
+
+print(f"{a = }")
+
+b = a[1:4]
+b[0] = 99
+
+print(f"{b = }")
+print(f"{a = }")
+```
+
+El segmento `a[1:4]` normalmente crea una vista del arreglo original. Por eso, modificar `b` modifica también `a`.
+
+Si necesitamos una copia independiente:
+```python
+a = np.array([1, 2, 3, 4, 5])
+
+print(f"{a = }")
+
+b = a[1:4].copy()
+b[0] = 99
+
+print(f"{b = }")
+print(f"{a = }")
+```
+
+La distinción importa especialmente cuando se trabaja con matrices grandes, se normalizan datos o se aplican filtros destructivos.
 ___
 ___
