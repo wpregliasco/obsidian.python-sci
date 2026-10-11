@@ -88,38 +88,32 @@ print(f"{matriz.shape = }")
 print(f"{matriz.size = }")
 print(f"{matriz.dtype = }")
 ```
-O para ser mas presisos
-* `a` y `b` son los parámetros: los nombres definidos en la función.
-* 10 y 5 son los argumentos: los valores que pasamos al llamar a la función.
 
-## Salida
+## Creacion de arreglos
 
-Una diferencia muy importante es entre mostrar un resultado y devolverlo.
 
 ```python
-def resta(a, b):
-	c = a - b
-	return c
-
-print(resta(10, 5))
+print(f"{np.zeros(4) = }")          # np.zeros_like 
+print(f"{np.ones(4) = }")           # np.ones_lile
+print(f"{np.full(4, 123.4) = }")    # np.full_like
 ```
 
-O para ser mas presisos
-* `c` resultado recibe el valor que devuelve la función: 5
-## Parametros por orden posicional
-
-El argumento se asigna según el orden en que aparece.
 ```python
-print(resta(10, 5))
-print(resta(4, 2))
+print(f"{np.arange(0, 10, 2) = }")
+print(f"{np.linspace(0, 10, 7)= }")
 ```
-## Parametros por palabra clave
 
-Podemos indicar explícitamente a qué parámetro corresponde cada argumento.
+## Operaciones 
+
+
 ```python
-print(resta(a=10, b=5))
-print(resta(b=5, a=10))
+a = np.array([1, 2, 3])
+b = np.array([10, 20, 30])
+
+print(f"{ a + b = }")
+print(f"{ np.exp(a) = }")
 ```
+````
 ## Que pasa si se mezclan los argumentos posicionales y los argumentos con nombre?
 
 Una función puede mezclar argumentos posicionales y argumentos con nombre, pero los argumentos posicionales deben ir primero, seguidos de los argumentos con nombre.
