@@ -2,7 +2,7 @@
 ## Localhost
 ```meta-bind-button
 label: Run Server
-id: pub.local
+id: publocal
 icon: "arrow-up"
 style: primary
 class: ""
@@ -17,7 +17,7 @@ actions:
 ```
 ```meta-bind-button
 label: Stop
-id: unpub.local
+id: unpublocal
 icon: "arrow-down"
 style: primary
 class: ""
@@ -30,7 +30,7 @@ actions:
     link: obsidian://shell-commands/?vault=python-sci&execute=296jq9lc5d
     newTab: true
 ```
-`BUTTON[pub.local,unpub.local]`
+`BUTTON[publocal,unpublocal]`
 
 ## Deploy to Server
 ```meta-bind-button
