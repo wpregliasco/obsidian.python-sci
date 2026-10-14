@@ -178,6 +178,98 @@ print(f"{b = }")
 print(f"{a = }")
 ```
 
-La distinción importa especialmente cuando se trabaja con matrices grandes, se normalizan datos o se aplican filtros destructivos.
-___
-___
+La distinción importa especialmente cuando se trabaja con  
+
+## Sub librerias de la libreria `numpy`
+
+### Constantes
+
+| Constante        | Se escribe       | Valor / significado |
+| ---------------- | ---------------- | ------------------- |
+| Pi               | `np.pi`          | 3.141592653589793   |
+| Número e         | `np.e`           | 2.718281828459045   |
+| Tau (2π)         | `np.tau`         | 6.283185307179586   |
+| Euler-Mascheroni | `np.euler_gamma` | 0.5772156649015329  |
+| Infinito         | `np.inf`         | Infinito positivo   |
+| NaN              | `np.nan`         | "Not a Number"      |
+### `numpy.random`: Generadores de números aleatorios y distribuciones estadísticas
+
+| Función                             | Para qué sirve                  |     |
+| ----------------------------------- | ------------------------------- | --- |
+| `rng = np.random.default_rng(seed)` | Crear un generador reproducible |     |
+| `rng.random(size)`                  | Uniforme `[0, 1)`               |     |
+| `rng.uniform(a, b, size)`           | Uniforme `[a, b)`               |     |
+| `rng.integers(low, high, size)`     | Enteros `[low, high)`           |     |
+| `rng.normal(loc, scale, size)`      | Gaussiana                       |     |
+| `rng.binomial(n, p, size)`          | Binomial                        |     |
+| `rng.poisson(lam, size)`            | Poisson                         |     |
+| `rng.exponential(scale, size)`      | Exponencial                     |     |
+| `rng.choice(a, size, replace, p)`   | Elegir elementos                |     |
+| `rng.shuffle(arr)`                  | Mezclar **in-place**            |     |
+| `rng.permutation(x)`                | Devolver copia mezclada         |     |
+|                                     |                                 |     |
+```python
+import numpy as np
+
+rng = np.random.default_rng(seed=42)   # semilla para reproducibilidad
+print("Tipo de rng:", type(rng))       # numpy.random._generator.Generator
+
+u2 = rng.uniform(low=-1, high=1, size=5)
+print("Uniforme [-1,1):", u2)
+```
+### `numpy.linalg`: Rutinas de álgebra lineal 
+
+```python
+import numpy as np
+
+A = np.array([[4, 2],
+              [1, 3]])
+
+B = np.array([[1, 0],
+              [0, 1]])
+
+v = np.array([1, 2])
+
+print("A @ v =", A @ v)
+print("A @ B =\n", A @ B)
+
+det = np.linalg.det(A)
+print("Determinante de A:", det)   # 4*3 - 2*1 = 10
+
+inv_A = np.linalg.inv(A)
+print("Inversa de A:\n", inv_A)
+
+b = np.array([10, 11])
+x = np.linalg.solve(A, b)
+print("Solución de Ax=b:", x)
+```
+
+### `numpy.polynomial`: Operaciones y creación de polinomios.
+
+|Operación|Método / atributo|Descripción|
+|---|---|---|
+|**Crear**|`Polynomial([c0, c1, ...])`|Coeficientes de menor a mayor|
+||`Polynomial.fromroots([r1, r2])`|Crear a partir de las raíces|
+|**Evaluar**|`p(x)`|Se llama como una función|
+|**Aritmética**|`p + q`, `p - q`, `p * q`, `p // q`, `p % q`, `p ** n`|Operadores directos|
+|**Derivar**|`p.deriv()`|Devuelve el polinomio derivado|
+|**Integrar**|`p.integ()`|Devuelve el polinomio integral|
+|**Raíces**|`p.roots()`|Devuelve un array con las raíces|
+
+```python
+from numpy.polynomial import Polynomial
+
+# 1. Crear un polinomio: p(x) = 1 + 2x + 3x²
+p = Polynomial([1, 2, 3])
+print(p)   # 1.0 + 2.0·x + 3.0·x²
+# 2. Evaluar: reemplazar x por un valor
+print(p(2))   # 1 + 2·2 + 3·2² = 1 + 4 + 12 = 17.0
+# 3. Sumar y multiplicar polinomios
+q = Polynomial([1, -2])       # q(x) = 1 - 2x
+print(p + q)   # 2.0 + 0.0·x + 3.0·x²
+print(p * q)   # 1.0 - 2.0·x + 3.0·x² - 6.0·x³
+
+```
+### `numpy.fft`: Herramientas para la Transformada Rápida de Fourier (análisis de señales y frecuencias).
+### `numpy.strings`: Funciones optimizadas para manipulación de cadenas de texto en arreglos.
+
