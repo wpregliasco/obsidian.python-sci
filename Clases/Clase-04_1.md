@@ -272,4 +272,6 @@ print(p * q)   # 1.0 - 2.0·x + 3.0·x² - 6.0·x³
 ```
 ### `numpy.fft`: Herramientas para la Transformada Rápida de Fourier (análisis de señales y frecuencias).
 ### `numpy.strings`: Funciones optimizadas para manipulación de cadenas de texto en arreglos.
+___
+___
 
