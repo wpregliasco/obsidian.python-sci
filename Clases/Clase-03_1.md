@@ -97,7 +97,7 @@ print(resta(b=5, a=10))
 Una función puede mezclar argumentos posicionales y argumentos con nombre, pero los argumentos posicionales deben ir primero, seguidos de los argumentos con nombre.
 ```python
 print(resta(10, b=5))  # Correcto
-print(resta(a=10, 3))  # SyntaxError
+# print(resta(a=10, 3))  # SyntaxError
 ```
 ## Los parámetros pueden tener valores por defecto
 ```python
