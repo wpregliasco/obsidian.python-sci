@@ -21,13 +21,12 @@ jupyter:
 ![200](../Imgs/Clase-04_1.png)
 
 
-- `def`, `lambda`, `map`, `sorted`, y `filter`
--  definición de funciones
+- `numpy`
 
 ---
 # Numpy para todes
 
-## Que son?
+## Que es?
 
 NumPy (Numerical Python) es una biblioteca fundamental del ecosistema científico de Python. Permite representar y operar con vectores, matrices y arreglos numéricos de manera eficiente. Se utiliza en prácticamente todas las áreas de la física computacional: análisis de datos experimentales, resolución numérica de ecuaciones, simulaciones, procesamiento de señales y cálculo científico.
 
