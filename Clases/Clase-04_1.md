@@ -98,7 +98,7 @@ print(f"{np.full(4, 123.4) = }")    # np.full_like
 
 print()
 
-print(f"{np.arange(0, 10, 2) = }")
+print(f"{np.arange(0, 9, 2) = }")
 print(f"{np.linspace(0, 10, 7)= }")
 ```
 

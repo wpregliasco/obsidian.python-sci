@@ -61,7 +61,7 @@ plt.plot(x, y)
 
 plt.title("Función cuadrática")
 plt.xlabel("x")
-plt.ylabel("y = x²")
+plt.ylabel(r"$y = x_0^2$")
 
 plt.grid(True)
 plt.show()
