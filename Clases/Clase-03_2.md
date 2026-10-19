@@ -1,6 +1,25 @@
 ---
 theme: gaia
+<<<<<<< HEAD
 publish: "true"
+||||||| 33aab5f
+publish: "false"
+=======
+publish: "false"
+jupyter:
+  jupytext:
+    cell_metadata_filter: -all
+    formats: ipynb,md
+    text_representation:
+      extension: .md
+      format_name: markdown
+      format_version: '1.3'
+      jupytext_version: 1.19.5
+  kernelspec:
+    display_name: Python (.venv)
+    language: python
+    name: jupymd-.venv-2a5df0dee3
+>>>>>>> origin/main
 ---
 # Python Científico
 ## de la ecuación al programa
@@ -24,7 +43,7 @@ def saludar():
 
 saludar()
 
-# print(nombre) #ERROR
+print(nombre) #ERROR
 ```
 
 Porque `nombre` es una **variable local** de `saludar`. Cuando termina la función, ese nombre deja de estar disponible en ese ámbito. Lo mismo vale para los parametros.
@@ -45,11 +64,14 @@ Esto funciona,  porque `nombre` fue creada **fuera de la función**.  La funció
 
 Si la variable esta definida dentro de la función, esta defincion tiene precedencia.
 ```python
-def saludar():
-    nombre = "Mariano"
-    print(nombre)
-    
+
 nombre = "Willy"
+
+def saludar():
+	global nombre 
+	nombre = "Mariano"
+	print(nombre)
+    
 
 print(nombre)
 

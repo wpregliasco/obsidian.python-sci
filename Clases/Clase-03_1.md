@@ -1,6 +1,25 @@
 ---
 theme: gaia
+<<<<<<< HEAD
 publish: "true"
+||||||| 33aab5f
+publish: "false"
+=======
+publish: "false"
+jupyter:
+  jupytext:
+    cell_metadata_filter: -all
+    formats: ipynb,md
+    text_representation:
+      extension: .md
+      format_name: markdown
+      format_version: '1.3'
+      jupytext_version: 1.19.5
+  kernelspec:
+    display_name: Python (.venv)
+    language: python
+    name: jupymd-.venv-2a5df0dee3
+>>>>>>> origin/main
 ---
 # Python Científico
 ## de la ecuación al programa
@@ -19,8 +38,7 @@ publish: "true"
 Una función es un bloque de código al que le ponemos un nombre y que podemos ejecutar cuando lo necesitemos.
 ```python
 def saludar():
-
-print("Hola Mariano")
+	print("Hola Mariano")
 
 saludar()
 ```
@@ -39,7 +57,7 @@ saludar("Mariano")
 saludar("Willy")
 ```
 pueden ser varios
-```python 
+```python
 def resta(a, b):
     """
     Imprimo la resta de dos números
@@ -56,7 +74,7 @@ O para ser mas presisos
 
 Una diferencia muy importante es entre mostrar un resultado y devolverlo.
 
-```python 
+```python
 def resta(a, b):
 	c = a - b
 	return c
@@ -158,13 +176,14 @@ print(maximo(5, 10))
 Usualmente se usan funciones `lambda` para definir funciones pequeñas y anónimas, especialmente cuando se pasan como argumentos a otras funciones. Por ejemplo, se pueden usar con funciones como `map()`, `filter()` o `sorted()`.
 
 Veamos unos ejemplos....
-### Aplicar una funcion a una lista: `map`
+### Aplicar una funcion a una lista: `map()
 ```python
 numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8]
 
 resultado = map(lambda x: x**2, numeros)
 
-print(resultado)
+print(list(resultado))
+
 ```
 ### Filtrar una lista segun un criterio: `filter`
 ```python
@@ -172,7 +191,7 @@ numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8]
   
 pares = filter(lambda x: x % 2 == 0, numeros)
 
-print(pares)
+print(list(pares))
 ```
 ### Ordenar un lista de listas por algun campo en particular: `sorted`
 ```python
