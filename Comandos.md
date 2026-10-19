@@ -1,5 +1,5 @@
 &nbsp;
-## Localhoste
+## Localhost
 ```meta-bind-button
 label: Run Server
 id: publocal

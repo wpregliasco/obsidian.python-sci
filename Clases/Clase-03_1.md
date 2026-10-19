@@ -1,6 +1,6 @@
 ---
 theme: gaia
-publish: "false"
+publish: "true"
 ---
 # Python Científico
 ## de la ecuación al programa
