@@ -1,6 +1,6 @@
 ---
 theme: gaia
-publish: "false"
+publish: "true"
 jupyter:
   jupytext:
     cell_metadata_filter: -all
