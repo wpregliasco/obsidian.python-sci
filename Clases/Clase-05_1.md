@@ -161,7 +161,6 @@ ssh usuario@host "hostname && pwd && ls"
 
 - si cambiara la clave pública del servidor aparece un cartel:
 
-<style scoped> p { color: red; } </style>
 WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED
 
 ---
