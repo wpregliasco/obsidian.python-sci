@@ -42,3 +42,60 @@
 - Gráfico con puntitos y eligiendo el color
 - Gráficos con temp y dewpoint
 - Dirección principal del viento
+
+# Lo que vendrá (nov)
+
+2 clases de octubre + 4 de nov = 6 clases
+
+1. Vs studio code  >>>>>>>>>>>>> 27/10 Martes
+	- edición
+		- autocomplete
+		- refactoring (F2)
+		- source (F12)
+	- format
+		- black
+		- ruff
+	- git
+	- ia
+	
+2. **Git repos** <<<<<<<<<<<<<<<<<<<<<<<<<<<< 29/10 Jueves
+3. Python objetos <<<<<<<<<<<<<<<<<<<<<<< 3/11 martes  
+4. Decoradores >>>>>>>>>>>>>>>>>>>>>>>>> 10/11 martes
+	 - Bibliotecas amigas
+		- pathlib
+		- subprocess
+		- datetime
+		- loguru
+	- cache
+	- timeit
+	- dataclass
+	- property
+	- beartype
+	- programación funcional
+5. Frontend << los 2                                                 6/11 jueves
+	- bash (argparse, typer)
+	- TUIs
+		- Textual
+		- tqdm
+	- GUIs
+		- Flet
+		- Tkinter
+		- Qt5
+	- APIs
+		- FastAPI
+		- Streamlit
+	
+6. A Scripts - Módulos - Packages <<  17/11
+	- empaquetado
+	- estructura típica
+	- publicación e intercambio
+	 - IO
+		- filesystem
+			- temp
+			- stderr 
+			- sdtoutput
+			- stdin
+			- pipes > >> < | tee & &&
+			- paralelización
+
+---
