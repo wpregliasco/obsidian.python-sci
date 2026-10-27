@@ -4,7 +4,7 @@ publish: "true"
 ---
 # Python Científico
 ## de la ecuación al programa
-### Clase 6a -La magia del Visual Studio
+### Clase 6a -La magia del Visual Studio 
 
 ![[Pasted image 20261027082145.png]]
 
