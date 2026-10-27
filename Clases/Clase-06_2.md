@@ -75,55 +75,76 @@ def calcular_total(precio, cantidad, descuento=0):
 En resumen: 
 - **Ruff** revisa el código para detectar problemas; 
 - **Black** normaliza su formato sin cambiar la lógica del programa.
-## Artificial Inteligent 
 
+# Artificial Intelligence
+
+## Generar código:
+
+Una ves mas, un buen  **prompt**  lo es todo!
+
+Consideremos este código, el cual falla en su ejecución:
+
+```python 
+def mean_value(data):`
+    `total = 0`
+
+    `for value in data:`
+        `total += value`
+
+    `return total / len(value)`
+
+
+measurements = [2.1, 2.3, 2.0, 2.2]
+print(mean_value(measurements))
+```
+
+Pidamos que lo resuelva:
+
+```
+Analizá este programa sin modificarlo inicialmente.
+
+Identificá el error y explicá por qué ocurre.
+Indicá qué concepto de Python está involucrado.
+Proponé la corrección mínima.
+Mostrá un caso de prueba normal y otro para una lista vacía.
+Explicá qué decisión debería tomar el programa ante una lista vacía.
+```
+
+Devolverá  algo así:
 ```python
-import numpy as np
+def mean_value(data):
+    if not data:
+        raise ValueError("No se puede calcular la media de una lista vacía")
 
-x = np.linspace(0, 10, 100)
+    total = 0
+
+    for value in data:
+        total += value
+
+    return total / len(data)
+
+
+measurements = [2.1, 2.3, 2.0, 2.2]
+print(mean_value(measurements))
 ```
 
 
-```mermaid
-flowchart TD
-A["VS CODE"]
+## Cómo escribir buenos `prompts` técnicos, o al menos intentarlo
 
-A --> B
-A --> C
-A --> D
+Un pedido útil no necesita ser largo, pero sí debe especificar el objetivo, las restricciones y el resultado esperado.
 
-    subgraph HERRAMIENTAS["Capacidades del IDE"]
-        B["IntelliSense"]
-        C["Refactoring"]
-        D["Source"]
-    end
+|   Pedido poco preciso   |                                     Pedido mejor definido                                     |
+| :---------------------: | :-------------------------------------------------------------------------------------------: |
+|   «Hacé un gráfico».    |       «Graficá los datos experimentales con barras de error y unidades en ambos ejes».        |
+| «Optimizá este código». |             «Reducí el tiempo de ejecución sin cambiar los resultados numéricos».             |
+|  «Arreglá este error».  | «Explicá la causa, proponé la corrección mínima y agregá una prueba que reproduzca el error». |
+| «Hacé una simulación».  |        «Simulá un oscilador armónico y compará la solución numérica con la analítica».        |
+## Criterios para el uso responsable de la IA
 
-    B --> E["Descubrir"]
-    C --> F["Modificar"]
-    D --> G["Comprender"]
+En computación científica hay una distinción esencial entre que un programa se ejecute correctamente y que sus resultados sean válidos.
 
-
-    E --> H["Código científico<br/>mantenible"]
-    F --> H
-    G --> H
-
-```
+- **No confiar en la apariencia:** un código elegante puede implementar mal una ecuación.
+- **Verificar las fuentes:** comprobar las funciones, las API y la documentación de las bibliotecas.
+- **Probar los casos límite:** datos vacíos, valores extremos, unidades incompatibles y posibles errores numéricos.    
+- **Comprender antes de entregar:** poder explicar el algoritmo, sus hipótesis y sus limitaciones.
 ---
-
-# GIT
-
-Una de las ventajas de VS Code es que no necesitamos ejecutar todos los comandos desde la terminal.
-
-En la barra lateral aparece:
-
-**Source Control**
-
-Desde allí podemos observar:
-![[Pasted image 20261027092612.png]]
-
-Podemos:
-- revisar diferencias,
-- hacer `stage`,
-- crear commits,
-- cambiar de rama,
-- resolver conflictos.
