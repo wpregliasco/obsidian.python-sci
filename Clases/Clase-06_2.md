@@ -144,7 +144,7 @@ Un pedido útil no necesita ser largo, pero sí debe especificar el objetivo, la
 En computación científica hay una distinción esencial entre que un programa se ejecute correctamente y que sus resultados sean válidos.
 
 - **No confiar en la apariencia:** un código elegante puede implementar mal una ecuación.
-- **Verificar las fuentes:** comprobar las funciones, las API y la documentación de las bibliotecas.
+- **Verificar las fuentes:** comprobar las funciones y la documentación de las bibliotecas.
 - **Probar los casos límite:** datos vacíos, valores extremos, unidades incompatibles y posibles errores numéricos.    
 - **Comprender antes de entregar:** poder explicar el algoritmo, sus hipótesis y sus limitaciones.
 ---
