@@ -8,7 +8,6 @@ publish: "true"
 
 ![[Pasted image 20261027082145.png]]
 
-
 ---
 
 ## IntelliSense
@@ -33,7 +32,6 @@ np.
 np.linspace(
 
 np.linspace(start, stop, num=50)
-
 ```
 
 ##  Refactoring (F2) / Extract Function
@@ -61,7 +59,6 @@ print(average)
 import numpy as np
 
 x = np.linspace(0, 10, 100)
-
 ```
 
 
