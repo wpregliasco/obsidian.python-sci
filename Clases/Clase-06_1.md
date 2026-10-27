@@ -90,3 +90,18 @@ A --> D
 
 # GIT
 
+Una de las ventajas de VS Code es que no necesitamos ejecutar todos los comandos desde la terminal.
+
+En la barra lateral aparece:
+
+**Source Control**
+
+Desde allí podemos observar:
+![[Pasted image 20261027092612.png]]
+
+Podemos:
+- revisar diferencias,
+- hacer `stage`,
+- crear commits,
+- cambiar de rama,
+- resolver conflictos.
