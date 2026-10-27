@@ -9,7 +9,7 @@ publish: "true"
 ![[Pasted image 20261027082145.png]]
 
 ---
-
+# Ayudas de edición
 ## IntelliSense
 
 Permite descubrir:
@@ -88,4 +88,5 @@ A --> D
 ```
 ---
 
+# GIT
 
