@@ -75,7 +75,7 @@ def calcular_total(precio, cantidad, descuento=0):
 En resumen: 
 - **Ruff** revisa el código para detectar problemas; 
 - **Black** normaliza su formato sin cambiar la lógica del programa.
-## Source (F12) / código fuente
+## Artificial Inteligent 
 
 ```python
 import numpy as np
