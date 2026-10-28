@@ -78,12 +78,49 @@ En resumen:
 
 # Artificial Intelligence
 
-## Generar código:
+## Generar código: 
+
+Un buen **prompt** es todo:
+
+```
+Implementá en Python una función estimate_pi(n, seed=None) que estime pi mediante el siguiente método:
+
+Generá puntos uniformes en el cuadrado [-1, 1] × [-1, 1].
+Contá los puntos que cumplen x² + y² <= 1. 
+Devolvé la estimación de pi. 
+Usá NumPy. 
+Permití fijar una semilla para reproducir los resultados. 
+Incluí un ejemplo de uso y explicá el método. 
+No agregues bibliotecas innecesarias.
+```
+
+Devolverá  algo así:
+
+```python
+import numpy as np
+
+def estimate_pi(n, seed=None):
+    """Estimate pi using the Monte Carlo method."""
+    rng = np.random.default_rng(seed)
+
+    x = rng.uniform(-1, 1, n)
+    y = rng.uniform(-1, 1, n)
+
+    inside = x**2 + y**2 <= 1
+
+    return 4 * np.mean(inside)
+
+
+if __name__ == "__main__":
+    estimate = estimate_pi(100_000, seed=42)
+    print(f"Estimated pi: {estimate:.5f}")
+
+```
+## Corregir codigo:
 
 Una ves mas, un buen  **prompt**  lo es todo!
 
 Consideremos este código, el cual falla en su ejecución:
-
 ```python 
 def mean_value(data):`
     `total = 0`
