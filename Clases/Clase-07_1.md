@@ -18,12 +18,12 @@ jupyter:
 # Python Científico
 ## de la ecuación al programa
 ### Clase 71 - Un monton de nada
-![[Pasted image 20261027105344.png|300]]
+![](../Imgs/Pasted%20image%2020261031170445.png)
 
 ---
 # Bilbliotecas amigas....
 
-## ¿Qué es pathlib?
+## `pathlib` todos los caminos conducen a Roma
 
 `pathlib` permite representar y manipular rutas del sistema de archivos mediante objetos Python. Hace que el manejo de los directorios sea **identico** en Windows y en Linux!
 
@@ -146,7 +146,21 @@ En computación científica es muy habitual representar fechas y horas mediante 
 
 Esta representación se conoce como Unix Timestamp o Unix Time.y se define como la cantidad de segundos transcurridos desde el **1 de enero de 1970 a las 00:00:00 UTC**, conocido como Unix Epoch.
 
+```python
+from datetime import datetime
 
+ahora = datetime.now()
+timestamp = ahora.timestamp()
+
+print(ahora)
+print(timestamp)
+
+timestamp = 1793458200
+fecha = datetime.fromtimestamp(timestamp)
+
+print(timestamp)
+print(fecha)
+```
 ## `subprocess` divide y triunfaras
 
 ___
