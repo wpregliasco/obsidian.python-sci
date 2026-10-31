@@ -5,7 +5,7 @@ publish: "true"
 # Python Científico
 ## de la ecuación al programa
 ### Clase 6b - Beautiful is better than ugly
-![[Pasted image 20261027105344.png|300]]
+![[../Imgs/Pasted image 20261027105344.png|300]]
 
 ---
 # Limpiando el código
