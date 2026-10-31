@@ -57,6 +57,8 @@ print(ruta.suffix)     # Extension
 e  incorpora el `glob`
 
 ```python
+from pathlib import Path
+
 data = Path.home()
 
 for archivo in data.glob(".ba*"):
