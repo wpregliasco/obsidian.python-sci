@@ -112,6 +112,40 @@ Trabajar con fechas, horas, intervalos temporales y marcas de tiempo o `timestam
 
 `datetime` forma parte de la biblioteca estándar de Python. No requiere instalación.
 
+```python
+from datetime import datetime
+
+ahora = datetime.now()
+print(ahora)
+
+experimento = datetime(2026, 10, 31, 14, 30, 0)
+print(experimento)
+
+print(ahora-experimento)
+
+```
+
+```python
+from datetime import datetime, timedelta
+
+inicio = datetime.now()
+
+# Simulate an experiment duration
+duracion = timedelta(hours=2, minutes=30)
+
+final = inicio + duracion
+
+print(f"Start: {inicio}")
+print(f"End:   {final}")
+
+```
+
+### Timestamp y Unix Time 
+
+En computación científica es muy habitual representar fechas y horas mediante un número en lugar de utilizar una cadena de texto.
+
+Esta representación se conoce como Unix Timestamp o Unix Time.y se define como la cantidad de segundos transcurridos desde el **1 de enero de 1970 a las 00:00:00 UTC**, conocido como Unix Epoch.
+
 
 ## `subprocess` divide y triunfaras
 
