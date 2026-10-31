@@ -63,7 +63,7 @@ for archivo in data.glob(".ba*"):
     print(archivo)
 ```
 
-##  `argparse` pasando parametros
+##  `argparse` pasando argumentos
 
 ```python
 #!/usr/bin/env python3
@@ -105,6 +105,11 @@ if __name__ == "__main__":
 ```
 
 ## `datetime` el timpo es dinero...
+
+Trabajar con fechas, horas, intervalos temporales y marcas de tiempo o `timestamps` siempre ha sido algo engorroso . Sin embargo es especialmente útil para organizar mediciones experimentales, registrar adquisiciones y analizar series temporales.
+
+`datetime` forma parte de la biblioteca estándar de Python. No requiere instalación.
+
 
 ## `subprocess` divide y triunfaras
 
