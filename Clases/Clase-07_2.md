@@ -17,9 +17,9 @@ jupyter:
 ---
 # Python Científico
 ## de la ecuación al programa
-### Clase 7b - Un monton de nada
-![](../Imgs/Pasted%20image%2020261031170445.png)
+### Clase 7b - Decoradores
 
+![](../Imgs/Pasted%20image%2020261101154909.png)
 ---
 #  Decoradores
 

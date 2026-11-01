@@ -163,16 +163,102 @@ print(fecha)
 ```
 ## `subprocess` divide y triunfaras
 
-___
+`subprocess` es una biblioteca de Python que permite ejecutar programas y comandos del sistema operativo desde un script. La idea central es que Python **no tiene** que hacer todo por sí mismo: puede coordinar otros programas.
+
+Sumpongamos que tenemos  el programa 
+
+```python
+import argparse
+
+parser = argparse.ArgumentParser(
+    description="Calcula el cuadrado de un número"
+)
+
+parser.add_argument(
+    "n",
+    type=float,
+    help="Número de entrada"
+)
+
+args = parser.parse_args()
+
+resultado = args.n**2
+
+print(resultado)
+```
+
+Puedo ejecutar un programa en python que llame a ese programa  y su salida sea capturada....
+
+```python
+#!/usr/bin/env python3
+
+import subprocess
+import sys
+
+# Encabezado de la tabla
+print("   n     n²")
+print("-------------")
+
+# Campaña de corridas
+for n in range(11):
+
+    # Ejecutar el programa de cálculo
+    proceso = subprocess.run(
+        [sys.executable, "cuadrado.py", str(n)],
+        capture_output=True,
+        text=True
+    )
+
+    # Recuperar el resultado
+    resultado = float(proceso.stdout)
+
+    # Mostrar resultados
+    print(f"{n:4d}   {resultado:6.1f}")
+```
+
+Esto ejecuta los procesos secuencialmente, es decir que espera que termine uno para inicial otro.
+
+Si queremos que esto no ocurra se usoa `subprocess.Popen`
+```python
+#!/usr/bin/env python3
+
+import subprocess
+import sys
+
+procesos = []
+
+# Lanzar todas las corridas
+for n in range(11):
+
+    proceso = subprocess.Popen(
+        [sys.executable, "cuadrado.py", str(n)],
+        stdout=subprocess.PIPE,
+        text=True
+    )
+
+    procesos.append((n, proceso))
+
+
+# Esperar los resultados
+print("   n     n²")
+print("-------------")
+
+for n, proceso in procesos:
+
+    resultado = float(proceso.communicate()[0])
+
+    print(f"{n:4d}   {resultado:6.1f}")
+
+```
+
+## `loguru` Everything Counts
+
+```
 
 
 1. Decoradores >>>>>>>>>>>>>>>>>>>>>>>>> 10/11 martes
-    - Bibliotecas amigas
-        - pathlib
-        - subprocess
-        - datetime
-        - loguru
-    - cache
+
+    - cacheimport 
     - timeit
     - dataclass
     - property
