@@ -275,7 +275,6 @@ logger.add(
     #compression="zip"
 )
 
-
 logger.info("Comenzando el programa")
 
 mediciones = np.array([10.2, 10.4, 10.1, 10.3, 10.5])
