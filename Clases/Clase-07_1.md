@@ -253,14 +253,39 @@ for n, proceso in procesos:
 
 ## `loguru` Everything Counts
 
+Permite:
+- Registrar información sobre el funcionamiento del programa.
+- Identificar advertencias y errores.
+- Guardar automáticamente los registros en archivos.
+- Incorporar fecha y hora a cada mensaje.
+- Rotar archivos de registro cuando alcanzan cierto tamaño.
+- Registrar excepciones con información sobre dónde ocurrió el error.
+- Facilitar el diagnóstico de programas que se ejecutan durante mucho tiempo.
+
+```python
+#!/usr/bin/env python3
+from loguru import logger
+import numpy as np
+
+logger.add(
+    "experimento.log",
+    #level="WARNING"
+    #rotation="10 MB",
+    #retention="7 days",
+    #compression="zip"
+)
+
+
+logger.info("Comenzando el programa")
+
+mediciones = np.array([10.2, 10.4, 10.1, 10.3, 10.5])
+
+logger.info("Cantidad de mediciones: {}", len(mediciones))
+
+promedio = np.mean(mediciones)
+
+logger.success("Promedio calculado: {:.3f}", promedio)
+
+print(f"Promedio = {promedio:.3f}")
 ```
-
-
-1. Decoradores >>>>>>>>>>>>>>>>>>>>>>>>> 10/11 martes
-
-    - cacheimport 
-    - timeit
-    - dataclass
-    - property
-    - beartype
-    - programación funcional
+---
