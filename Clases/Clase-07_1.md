@@ -52,6 +52,9 @@ print(ruta.is_dir())   # Is it a directory?
 print(ruta.name)       # File name
 print(ruta.stem)       # Name without extension
 print(ruta.suffix)     # Extension
+
+directorio = Path("resultados")  # Crea todos los directorios
+directorio.mkdir(parents=True, exist_ok=True)
 ```
 
 e  incorpora el `glob`
