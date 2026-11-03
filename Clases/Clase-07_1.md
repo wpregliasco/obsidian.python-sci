@@ -266,25 +266,31 @@ Permite:
 #!/usr/bin/env python3
 from loguru import logger
 import numpy as np
+import sys
 
-logger.add(
-    "experimento.log",
-    #level="WARNING"
-    #rotation="10 MB",
-    #retention="7 days",
-    #compression="zip"
-)
 
-logger.info("Comenzando el programa")
+def main() -> int:
+    logger.remove()  # evitar el handler stderr por defecto si no lo querés
+    logger.add(
+        "experimento.log",
+        level="DEBUG",
+        rotation="10 MB",
+        retention="7 days",
+        compression="zip",
+        encoding="utf-8",
+        enqueue=True,
+    )
+    logger.add(sys.stdout, level="INFO", colorize=True)
 
-mediciones = np.array([10.2, 10.4, 10.1, 10.3, 10.5])
+    mediciones = np.array([10.2, 10.4, 10.1, 10.3, 10.5])
+    logger.debug("Datos: {}", mediciones)
+    logger.info("Cantidad de mediciones: {}", mediciones.size)
+    logger.success("Promedio calculado: {:.3f}", mediciones.mean())
+    return 0
 
-logger.info("Cantidad de mediciones: {}", len(mediciones))
 
-promedio = np.mean(mediciones)
+if __name__ == "__main__":
+    raise SystemExit(main())
 
-logger.success("Promedio calculado: {:.3f}", promedio)
-
-print(f"Promedio = {promedio:.3f}")
 ```
 ---
