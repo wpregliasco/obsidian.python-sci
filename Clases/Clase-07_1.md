@@ -226,30 +226,29 @@ Si queremos que esto no ocurra se usoa `subprocess.Popen`
 import subprocess
 import sys
 
-procesos = []
+# Encabezado de la tabla
+print("n\tCuadrado")
+print("-" * 20)
 
-# Lanzar todas las corridas
+# Campaña de corridas
 for n in range(11):
 
+    # Ejecutar el programa de cálculo
     proceso = subprocess.Popen(
-        [sys.executable, "cuadrado.py", str(n)],
+        [sys.executable, "./cuadrado.py", str(n)],
         stdout=subprocess.PIPE,
-        text=True
+        stderr=subprocess.PIPE,
+        text=True,
     )
 
-    procesos.append((n, proceso))
+    # Recuperar la salida del proceso
+    stdout, stderr = proceso.communicate()
 
+    # Recuperar el resultado
+    resultado = float(stdout)
 
-# Esperar los resultados
-print("   n     n²")
-print("-------------")
-
-for n, proceso in procesos:
-
-    resultado = float(proceso.communicate()[0])
-
-    print(f"{n:4d}   {resultado:6.1f}")
-
+    # Mostrar resultados
+    print(f"{n}\t{resultado}")
 ```
 
 ## `loguru` Everything Counts
