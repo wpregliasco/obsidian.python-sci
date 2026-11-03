@@ -83,4 +83,47 @@ def calcular_suma(n):
 calcular_suma(1000000)
 ```
 
-# Programacion funcional:
+# ¿Qué es la programación funcional?
+
+La programación funcional es un paradigma de programación que propone construir programas a partir de la composición de funciones.
+
+En lugar de describir paso a paso cómo modificar los datos, buscamos expresar qué operación queremos realizar sobre ellos.
+
+Sus ideas principales son:
+
+- Utilizar funciones como objetos de primera clase.
+- Preferir funciones que no modifiquen los datos originales.
+- Evitar efectos secundarios innecesarios.
+- Componer funciones simples para construir operaciones más complejas.
+- Aplicar operaciones como `map` y `filter`
+
+```python
+def aplicar(funcion, x):
+    return funcion(x)
+
+
+def cuadrado(x):
+    return x**2
+
+
+def cubo(x):
+    return x**3
+
+
+print(aplicar(cuadrado, 3))
+print(aplicar(cubo, 3))
+```
+
+o como:
+
+```python
+numeros = [1, 2, 3, 4, 5]
+
+cuadrados = list(map(cuadrado, numeros))
+cubos = list(map(cubo, numeros))
+
+print("Números: ", numeros)
+print("Cuadrados:", cuadrados)
+print("Cubos:    ", cubos)
+```
+
