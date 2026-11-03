@@ -1,0 +1,6 @@
+2026-11-03 11:31:45.242 | DEBUG    | __main__:main:20 - Datos: [10.2 10.4 10.1 10.3 10.5]
+2026-11-03 11:31:45.243 | INFO     | __main__:main:21 - Cantidad de mediciones: 5
+2026-11-03 11:31:45.263 | SUCCESS  | __main__:main:22 - Promedio calculado: 10.300
+2026-11-03 11:32:12.370 | DEBUG    | __main__:main:19 - Datos: [10.2 10.4 10.1 10.3 10.5]
+2026-11-03 11:32:12.371 | INFO     | __main__:main:20 - Cantidad de mediciones: 5
+2026-11-03 11:32:12.372 | SUCCESS  | __main__:main:21 - Promedio calculado: 10.300
