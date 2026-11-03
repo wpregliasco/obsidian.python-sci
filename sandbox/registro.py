@@ -2,6 +2,7 @@ from loguru import logger
 import numpy as np
 import sys
 
+
 def main() -> int:
     logger.remove()  # evitar el handler stderr por defecto si no lo querés
     logger.add(
@@ -20,6 +21,7 @@ def main() -> int:
     logger.info("Cantidad de mediciones: {}", mediciones.size)
     logger.success("Promedio calculado: {:.3f}", mediciones.mean())
     return 0
+
 
 if __name__ == "__main__":
     raise SystemExit(main())
