@@ -75,37 +75,32 @@ for archivo in data.glob(".ba*"):
 
 ```python
 #!/usr/bin/env python3
-
 import argparse
+import math
 
 
 def main():
 
     parser = argparse.ArgumentParser(
-        description="Simulador de una esfera misteriosa.",
-        epilog="Ningúna pariticula ha sido lastimada durante esta simulación."
+        description="Calcula el radio de una esfera a partir de su volumen.",
+        epilog="El volumen se expresa en cm³ y el radio en cm.",
     )
 
-    # Radio de la esfera
     parser.add_argument(
-        "-r", "--radio",
-        type=float,
-        default=1,
-        help="Radio de la esfera en cm (por defecto: 1 cm)"
-    )
-
-    # Cantidad de partículas
-    parser.add_argument(
-        "-p", "--particulas",
-        type=int,
-        default=10000,
-        help="Cantidad de partículas exploradoras (por defecto: 10000)"
+        "-v", "--volumen", type=float, required=True, 
+        help="Volumen de la esfera en cm³"
     )
 
     args = parser.parse_args()
 
-    print(f"Radio de la esfera: {args.radio} cm")
-    print(f"Partículas enviadas: {args.particulas}")
+    if args.volumen <= 0:
+        parser.error("El volumen debe ser positivo.")
+
+    radio = (3 * args.volumen / (4 * math.pi)) ** (1 / 3)
+
+    print(f"Volumen: {args.volumen} cm³")
+    print(f"Radio: {radio:.4f} cm")
+
 
 if __name__ == "__main__":
     main()
@@ -197,29 +192,29 @@ Puedo ejecutar un programa en python que llame a ese programa  y su salida sea c
 
 ```python
 #!/usr/bin/env python3
-
 import subprocess
 import sys
 
 # Encabezado de la tabla
-print("   n     n²")
-print("-------------")
+print("n\tCuadrado")
+print("-"*20)
 
 # Campaña de corridas
 for n in range(11):
 
     # Ejecutar el programa de cálculo
     proceso = subprocess.run(
-        [sys.executable, "cuadrado.py", str(n)],
+        [sys.executable, "./cuadrado.py", str(n)],
         capture_output=True,
-        text=True
+        text=True,
+        check=False,
     )
 
     # Recuperar el resultado
     resultado = float(proceso.stdout)
 
     # Mostrar resultados
-    print(f"{n:4d}   {resultado:6.1f}")
+    print(f"{n}\t{resultado}")
 ```
 
 Esto ejecuta los procesos secuencialmente, es decir que espera que termine uno para inicial otro.
