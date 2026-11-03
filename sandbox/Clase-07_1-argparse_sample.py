@@ -8,14 +8,11 @@ def main():
 
     parser = argparse.ArgumentParser(
         description="Calcula el radio de una esfera a partir de su volumen.",
-        epilog="El volumen se expresa en cm³ y el radio en cm."
+        epilog="El volumen se expresa en cm³ y el radio en cm.",
     )
 
     parser.add_argument(
-        "-v", "--volumen",
-        type=float,
-        required=True,
-        help="Volumen de la esfera en cm³"
+        "-v", "--volumen", type=float, required=True, help="Volumen de la esfera en cm³"
     )
 
     args = parser.parse_args()
