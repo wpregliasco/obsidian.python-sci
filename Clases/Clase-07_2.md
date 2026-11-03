@@ -57,7 +57,7 @@ print(fibonacci(40))
 print(fibonacci(4))
 ```
 
-## `@timeit`: caclula el tiempo de ejecucion
+## `@timeit`: calcula el tiempo de ejecución
 
 ```python
 import time
