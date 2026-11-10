@@ -13,7 +13,7 @@ jupyter:
     language: python
     name: python3
 ---
-(<a href="static/notebooks/clase_09.ipynb" download data-router-ignore>Descargar notebook</a>)
+(<a href="static/notebooks/clase_09.ipynb" download data-router-ignore>Descargar notebook</a>).
 # Clase 09 — Objetos
 
 Simulación de un gas de partículas duras en 2D con condiciones de borde periódicas.
