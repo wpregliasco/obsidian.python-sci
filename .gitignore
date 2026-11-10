@@ -12,7 +12,7 @@
 .DS_Store
 
 # Ignore TPs ipynb
-TPs/*.ipynb
+#TPs/*.ipynb
 
 # python
 # Byte-compiled / optimized / DLL files
